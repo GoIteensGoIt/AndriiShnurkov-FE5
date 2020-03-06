@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Brush Script Std;
+    src: url(../fonts//Brush_Script.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 280px;
+    height: 325px;
+}
+
+.dark {
+    width: 280px;
+    height: 325px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    // opacity: 0.3;
+    // z-index: 3;
+}
+
+.woman {
+    position: absolute;
+    top: -50px;
+    left: -120px;
+    width: 400px;
+    height: 325px;
+}
+
+.wrapper2 {
+    background-color: #4f181d;
+    width: 280px;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule {
+    width: 216px;
+    margin-top: 45px;
+}
+
+.text {
+    margin-top: 47px;
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+}
+
+.info {
+    position: absolute;
+    top: 67px;
+    z-index: 3;
+    max-width: 172px;
+    font-family: Brush Script Std;
+    font-size: 28px;
+    color: rgba(243, 130, 10, 255);
+    text-align: center;
+
+}
+
+.number {
+    margin-top: 151px;
+    z-index: 3;
+    font-family: Montserrat-Bold;
+    position: absolute;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+}
+
+.button {
+    margin-top: 202px;
+    border-radius: 5px;
+    z-index: 3;
+    height: 56px;
+    width: 240px;
+    border: 0;
+    background-color: #f3820a;
+    font-family: Montserrat-SemiBold;
+    position: absolute;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 255);
+    text-align: center;
+}
+
+.background-tablet {
+    display: none;
+    position: absolute;
+}
+
+.background-laptop {
+    width: 387px;
+    height: 518px;
+    display: none;
+}
+
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 13px;
+}
+
+.day,
+.time {
+    display: block;
+}
+
+.day {
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: rgba(243, 130, 10, 255);
+}
+
+.time {
+    font-family: Montserrat-Regular;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 255);
+}

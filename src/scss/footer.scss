@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("./fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("./fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("./fonts/Montserrat-Medium.ttf");
+}
+
+.footer {
+    background-color: #4f181d;
+    height: 391px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoIcon {
+    height: 41px;
+    margin-top: 44px;
+
+}
+
+.wrapped {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 27px
+}
+
+.iconPointer {
+    width: 14px;
+    height: 18px;
+    margin-top: 4px;
+    margin-right: 7px;
+
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.addressLine {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    line-height: 26px;
+}
+
+.colored {
+    color: #ffffff;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+}
+
+.emailColor {
+    color: #d16e0f;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+}
+
+.addressText {
+    display: block;
+}
+
+.socialNetworks {
+    display: flex;
+    margin-top: 27px;
+}
+
+.facebook {
+    position: relative;
+    border: 1px solid #f3820a;
+    border-radius: 4px;
+    width: 35px;
+    height: 30px;
+}
+
+.facebookIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+}
+
+.instagram {
+    border: 1px solid #f3820a;
+    border-radius: 4px;
+    width: 35px;
+    height: 30px;
+    position: relative;
+    margin-left: 15px;
+}
+
+.instagramIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 240px;
+    height: 56px;
+    background-color: #f3820a;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttonText {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Montserrat-SemiBold";
+}
+
+.footerCopyright {
+    background-color: #421418;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyrightText {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat-Medium";
+    font-size: 11px;
+    color: #714f52;
+}
+
+.yearText {
+    margin-left: 5px;
+}
+
+.symbolText {
+    margin-left: 9px;
+}
+
+.developedText {
+    margin-left: 10px;
+}
+
+.heartIcon {
+    color: #f3820a;
+    font-size: 16px;
+}
+
+.goitLink {
+    margin-left: 6px;
+    color: #714f52;
+}
+
+@media (min-width: 678px) {
+
+    .footer {
+        height: 238px;
+    }
+
+    .logoIcon {
+        margin-top: 17px;
+    }
+
+    .wrapped {
+        display: flex;
+        align-items: center;
+    }
+
+    .tablet {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 12px;
+    }
+
+    .addressLine {
+        margin-left: 58px;
+    }
+
+    .socialNetworks {
+        margin-left: 56px;
+    }
+
+    .button {
+        margin-top: 47px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .footer {
+        height: 172px;
+    }
+
+    .logoIcon {
+        width: 85px;
+        height: 39px;
+        margin-top: 20px;
+    }
+
+    .laptop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    .addressLine {
+        margin-left: 58px;
+    }
+
+    .socialNetworks {
+        margin-left: 56px;
+        margin-top: 52px;
+    }
+
+    .button {
+        margin-left: 64px;
+        margin-top: 58px;
+    }
+
+}
+
+@media (min-width: 1920px) {
+
+    .footer {
+        height: 183px;
+    }
+
+    .logoIcon {
+        margin-top: 20px;
+    }
+
+    .laptop {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .address {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 56px;
+        margin-top: 38px;
+    }
+
+    .addressLine {
+        margin-left: 98px;
+    }
+
+    .socialNetworks {
+        margin-left: 96px;
+        margin-top: 73px;
+    }
+
+    .button {
+        margin-left: 173px;
+        margin-top: 64px;
+    }
+
+}
