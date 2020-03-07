@@ -1,33 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "Montserrat-Regular";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("./fonts/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: "Montserrat-SemiBold";
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url("./fonts/Montserrat-SemiBold.ttf");
-}
-
-@font-face {
-    font-family: "Montserrat-Medium";
-    font-style: normal;
-    font-weight: 500;
-    font-display: swap;
-    src: url("./fonts/Montserrat-Medium.ttf");
-}
-
 .footer {
     background-color: #4f181d;
     height: 391px;
@@ -59,7 +29,6 @@
     height: 18px;
     margin-top: 4px;
     margin-right: 7px;
-
 }
 
 .address {
@@ -76,13 +45,13 @@
 
 .colored {
     color: #ffffff;
-    font-family: "Montserrat-Regular";
+    font-family: "Montserrat_Regular";
     font-size: 14px;
 }
 
 .emailColor {
     color: #d16e0f;
-    font-family: "Montserrat-Regular";
+    font-family: "Montserrat_Regular";
     font-size: 14px;
 }
 
@@ -174,6 +143,7 @@
 
 .developedText {
     margin-left: 10px;
+    position: relative;
 }
 
 .heartIcon {
@@ -186,19 +156,30 @@
     color: #714f52;
 }
 
-@media (min-width: 678px) {
+.flexible {
+    position: relative;
+    display: flex;
+    margin-left: -21px;
+}
+
+@media (min-width: 768px) {
+    .tablet__iconPlace {
+        position: absolute;
+        right: 142px;
+    }
 
     .footer {
         height: 238px;
     }
 
     .logoIcon {
-        margin-top: 17px;
+        margin-top: 27px;
     }
 
     .wrapped {
         display: flex;
         align-items: center;
+        justify-content: start;
     }
 
     .tablet {
@@ -229,7 +210,7 @@
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
 
     .footer {
         height: 172px;
@@ -238,7 +219,7 @@
     .logoIcon {
         width: 85px;
         height: 39px;
-        margin-top: 20px;
+        margin-top: 37px;
     }
 
     .laptop {
@@ -278,7 +259,7 @@
     }
 
     .logoIcon {
-        margin-top: 20px;
+        margin-top: 50px;
     }
 
     .laptop {
