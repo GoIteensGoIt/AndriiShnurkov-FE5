@@ -1,41 +1,23 @@
-@font-face {
-    font-family: BrushScriptStd;
-    font-weight: 400;
-    font-style: normal;
-    src: url(../fonts/Brush_Script.ttf);
-}
-
-@font-face {
-    font-family: Monsterrat-Medium;
-    font-weight: 500;
-    font-style: normal;
-    src: url(../fonts/Montserrat-Medium.ttf);
-}
-
 .musicpromoute {
-    display: flex;
-    justify-content: center;
-
-}
-
-.background {
     width: 280px;
     height: 418px;
     background-color: #f6afcf;
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
+    margin-top: 55px;
 }
 
-.img {
+.musicpromoute__quotes {
     display: block;
-    font-family: BrushScriptStd;
+    font-family: "Brush_Script";
     color: #ffffff;
     font-size: 178px;
     position: absolute;
     z-index: 2;
 }
 
-.info {
+.musicpromoute__info {
     position: absolute;
     top: 51px;
     left: 50%;
@@ -44,18 +26,20 @@
     height: 316px;
     color: #4f181d;
     font-size: 19px;
-    font-family: Monsterrat-Medium, sans-serif;
+    font-family: "Montserrat-Medium";
+    font-weight: 900;
     text-align: center;
     z-index: 3;
 }
 
-.infoIcon {
+.info__description {
     line-height: 30px;
     font-weight: 600;
+    width: 210px;
 }
 
-.circle1,
-.circle2 {
+.musicpromoute__circle1,
+.musicpromoute__circle2 {
     position: absolute;
     opacity: 0.5;
     width: 192px;
@@ -64,50 +48,55 @@
     border-radius: 50%;
 }
 
-.circle1 {
+.musicpromoute__circle1 {
     top: -7px;
     left: 44px;
 }
 
-.circle2 {
+.musicpromoute__circle2 {
     top: 89px;
     left: 125px;
 }
 
+
 @media (min-width: 768px) {
-    .background {
+    .musicpromoute {
         width: 688px;
         height: 172px;
     }
 
-    .img {
+    .musicpromoute__quotes {
         top: -9px;
         left: 9px;
     }
 
-    .info {
+    .musicpromoute__info {
         width: 613px;
         height: 81px;
         top: 43px;
         left: 50%;
     }
 
-    .circle1 {
+    .info__description {
+        width: 613px;
+    }
+
+    .musicpromoute__circle1 {
         left: 472px;
         top: -37px;
         height: 194px;
     }
 
-    .circle2 {
+    .musicpromoute__circle2 {
         left: 560px;
         top: 75px;
         height: 194px;
     }
 
-    .circle1,
-    .circle2,
-    .circle3,
-    .circle4 {
+    .musicpromoute__circle1,
+    .musicpromoute__circle2,
+    .musicpromoute__circle3,
+    .musicpromoute__circle4 {
         position: absolute;
         opacity: 0.5;
         width: 194px;
@@ -115,30 +104,35 @@
         border-radius: 50%;
     }
 
-    .circle3 {
+    .musicpromoute__circle3 {
+        position: absolute;
         left: 117px;
         top: -26px;
         height: 194px;
+        display: block;
     }
 
-    .circle4 {
+    .musicpromoute__circle4 {
+        position: absolute;
         left: -25px;
         top: 35px;
         height: 195px;
+        display: block;
     }
 }
 
 @media (min-width: 1280px) {
-    .background {
+    .musicpromoute {
         width: 1200px;
         height: 222px;
+        margin-top: 72px;
     }
 
-    .img {
+    .musicpromoute__quotes {
         left: 204px;
     }
 
-    .info {
+    .musicpromoute__info {
         font-size: 22px;
         width: 885px;
         height: 88px;
@@ -146,46 +140,54 @@
         top: 67px;
     }
 
-    .circle1,
-    .circle2,
-    .circle3,
-    .circle4 {
+    .info__description {
+        width: 1016px;
+    }
+
+    .info__description::first-line {
+        width: 600px;
+    }
+
+    .musicpromoute__circle1,
+    .musicpromoute__circle2,
+    .musicpromoute__circle3,
+    .musicpromoute__circle4 {
         width: 271px;
         height: 271px;
     }
 
-    .circle1 {
+    .musicpromoute__circle1 {
         left: 856px;
         top: -132px;
     }
 
-    .circle2 {
+    .musicpromoute__circle2 {
         left: 981px;
         top: 37px;
     }
 
-    .circle3 {
+    .musicpromoute__circle3 {
         left: 354px;
         top: -106px;
     }
 
-    .circle4 {
+    .musicpromoute__circle4 {
         left: 153px;
         top: -19px;
     }
 }
 
 @media (min-width: 1920px) {
-    .background {
-        width: 1583px;
+    .musicpromoute {
+        width: 1584px;
         height: 222px;
     }
 
-    .img {
+    .musicpromoute__quotes {
         left: 358px;
     }
 
-    .info {
+    .musicpromoute__info {
         font-size: 26px;
         width: 1016px;
         height: 101px;
@@ -193,22 +195,22 @@
         top: 62px;
     }
 
-    .circle1 {
+    .musicpromoute__circle1 {
         left: 1026px;
         top: -132px;
     }
 
-    .circle2 {
+    .musicpromoute__circle2 {
         left: 1151px;
         top: 37px;
     }
 
-    .circle3 {
+    .musicpromoute__circle3 {
         left: 334px;
         top: -106px;
     }
 
-    .circle4 {
+    .musicpromoute__circle4 {
         left: 133px;
         top: -19px;
     }

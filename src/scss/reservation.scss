@@ -1,155 +1,214 @@
-@font-face {
-    font-family: Brush Script Std;
-    src: url(../fonts//Brush_Script.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Montserrat-Bold;
-    src: url(../fonts/Montserrat-Bold.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Montserrat-SemiBold;
-    src: url(../fonts/Montserrat-SemiBold.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Montserrat-Regular;
-    src: url(../fonts/Montserrat-Regular.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
-
 .reservation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 55px;
 }
 
-
-.wrapper1 {
-    display: flex;
-    justify-content: center;
-    position: relative;
+.reservation__imgBar {
+    background: url(../favicon/pic3.jpg);
     width: 280px;
     height: 325px;
+    background-position: left -40px top -90px;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    background-color: #a19ea1;
+    background-blend-mode: multiply;
+    margin: 0 auto;
 }
 
-.dark {
-    width: 280px;
-    height: 325px;
-    background-color: black;
-    overflow: hidden;
-    position: relative;
-    // opacity: 0.3;
-    // z-index: 3;
+.reservation__imgBar-title {
+    color: #f3820a;
+    font-family: "Brush_Script", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    width: 172px;
+    margin: 0 auto;
+    padding-top: 70px;
 }
 
-.woman {
-    position: absolute;
-    top: -50px;
-    left: -120px;
-    width: 400px;
-    height: 325px;
+.reservation__imgBar-phoneNumber {
+    font-size: 24px;
+    display: block;
+    text-align: center;
+    color: #ffff;
+    font-family: "Montserrat_Bold", sans-serif;
+    font-weight: 600;
+    margin-top: 18px;
 }
 
-.wrapper2 {
+.reservation__imgBar-button {
+    background-color: #f3820a;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 240px;
+    height: 56px;
+    margin-top: 32px;
+}
+
+.reservation__imgBar-buttonText {
+    text-align: center;
+    display: block;
+    font-family: "Montserrat-SemiBold";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 55px;
+    color: black;
+}
+
+.reservation__blockSchedule {
     background-color: #4f181d;
     width: 280px;
     height: 325px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0 auto;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
-.schedule {
-    width: 216px;
-    margin-top: 45px;
-}
-
-.text {
-    margin-top: 47px;
-    font-family: Montserrat-Bold;
+.reservation__blockSchedule-title {
     font-size: 24px;
-    color: rgba(255, 255, 255, 255);
     text-align: center;
+    color: #ffff;
+    font-family: "Montserrat_Bold";
+    line-height: 110px;
 }
 
-.info {
-    position: absolute;
-    top: 67px;
-    z-index: 3;
-    max-width: 172px;
-    font-family: Brush Script Std;
-    font-size: 28px;
-    color: rgba(243, 130, 10, 255);
-    text-align: center;
-
+.reservation__blockSchedule-week {
+    width: 210px;
+    margin: 0 auto;
 }
 
-.number {
-    margin-top: 151px;
-    z-index: 3;
-    font-family: Montserrat-Bold;
-    position: absolute;
-    font-size: 24px;
-    color: rgba(255, 255, 255, 255);
-    text-align: center;
+.reservation__blockSchedule-day {
+    color: #f3820a;
 }
 
-.button {
-    margin-top: 202px;
-    border-radius: 5px;
-    z-index: 3;
-    height: 56px;
-    width: 240px;
-    border: 0;
-    background-color: #f3820a;
-    font-family: Montserrat-SemiBold;
-    position: absolute;
-    font-size: 16px;
-    color: rgba(0, 0, 0, 255);
-    text-align: center;
+.reservation__blockSchedule-time {
+    color: #ffff;
+    float: right;
 }
 
-.background-tablet {
-    display: none;
-    position: absolute;
-}
-
-.background-laptop {
-    width: 387px;
-    height: 518px;
-    display: none;
-}
-
-
-.schedule-item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 13px;
-}
-
-.day,
-.time {
-    display: block;
-}
-
-.day {
-    font-family: Montserrat-Regular;
+.reservation__blockSchedule-day,
+.reservation__blockSchedule-time {
     font-size: 13px;
-    color: rgba(243, 130, 10, 255);
+    font-family: "Montserrat_Regular";
+    line-height: 26px;
 }
 
-.time {
-    font-family: Montserrat-Regular;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 255);
+@media (min-width: 768px) {
+    .reservation__imgBar {
+        background-size: 105%;
+        width: 688px;
+        height: 325px;
+        background-position: center;
+    }
+
+    .reservation__imgBar-title {
+        width: 282px;
+        padding-top: 50px;
+    }
+
+    .reservation__imgBar-phoneNumber {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .reservation__blockSchedule {
+        width: 688px;
+        height: 325px;
+    }
+
+    .reservation__blockSchedule-week {
+        width: 310px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .reservation {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 69px;
+
+    }
+
+    .reservation__imgBar {
+        background-size: 105%;
+        width: 793px;
+        height: 518px;
+        background-position: center;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 auto;
+        margin-right: 10px;
+    }
+
+    .reservation__imgBar-title {
+        padding-top: 145px;
+    }
+
+    .reservation__imgBar-phoneNumber {
+        font-size: 54px;
+        margin: 0;
+    }
+
+    .reservation__imgBar-button {
+        margin-top: 45px;
+    }
+
+    .reservation__blockSchedule {
+        width: 387px;
+        height: 518px;
+        display: inline-block;
+        margin: 0 auto;
+        margin-left: 10px;
+    }
+
+    .reservation__blockSchedule-title {
+        line-height: 130px;
+    }
+
+    .reservation__blockSchedule-week {
+        width: 310px;
+    }
+
+    .reservation__blockSchedule-day,
+    .reservation__blockSchedule-time {
+        font-size: 15px;
+        line-height: 40px;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .reservation__imgBar {
+        width: 1049px;
+        height: 620px;
+        margin-right: 10.5px;
+    }
+
+    .reservation__imgBar-title {
+        padding-top: 200px;
+        font-size: 40px;
+        width: 390px;
+    }
+
+    .reservation__imgBar-phoneNumber {
+        font-size: 64px;
+    }
+
+    .reservation__blockSchedule {
+        width: 513px;
+        height: 620px;
+        margin-left: 10.5px;
+    }
+
+    .reservation__blockSchedule-title {
+        margin-top: 70px;
+        font-size: 26px;
+    }
+
+    .reservation__blockSchedule-day,
+    .reservation__blockSchedule-time {
+        font-size: 16px;
+    }
 }
